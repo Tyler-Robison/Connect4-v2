@@ -32,7 +32,7 @@ class Game {
         top.setAttribute('id', 'column-top');
 
         //binds value of this to the Game Class for handleClick function. 
-        this.click = this.handleClick.bind(this)
+        this.click = this.handleClick.bind(this);
         top.addEventListener('click', this.click);
 
         for (let x = 0; x < this.width; x++) {
@@ -81,9 +81,9 @@ class Game {
 
     endGame(msg) {
         const top = document.querySelector("#column-top");
-        top.removeEventListener('click', this.click)
+        top.removeEventListener('click', this.click);
         this.gameOver = true;
-        document.querySelector('#reminder').innerText = msg
+        document.querySelector('#reminder').innerText = msg;
     }
 
     handleClick(evt) {
@@ -98,8 +98,8 @@ class Game {
         }
 
         // place piece in board and add to HTML table
-        this.board[y][x] = this.currPlayer; ///xxxxxx
-        this.placeInTable(y, x); ////xxxxxxx
+        this.board[y][x] = this.currPlayer;
+        this.placeInTable(y, x); 
 
         // check for win
         if (this.checkForWin()) {
@@ -168,4 +168,4 @@ document.querySelector('#startButton').addEventListener('click', function () {
             reminder.innerText = '';
         }, 1500)
     }
-})
+});
