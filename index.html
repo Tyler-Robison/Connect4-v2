@@ -1,0 +1,47 @@
+<!doctype html>
+
+<head>
+    <title>Connect 4 V2</title>
+    <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Connect Four!</h1>
+    <p id="reminder"></p>
+
+    <label for="p1Color" class="label">Player 1 Color</label>
+    <select id="p1Color">
+      <option value="red" selected>red</option>
+      <option value="green">green</option>
+      <option value="blue">blue</option>
+      <option value="black">black</option>
+      <option value="yellow">yellow</option>
+      <option value="orange">orange</option>
+      <option value="purple">purple</option>
+    </select>
+
+    <label for="p2Color" class="label">Player 2 Color</label>
+    <select id="p2Color">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue" selected>blue</option>
+        <option value="black">black</option>
+        <option value="yellow">yellow</option>
+        <option value="orange">orange</option>
+        <option value="purple">purple</option>
+    </select>
+
+    <button id="startButton">Start game</button>
+
+</div>
+<div id="mainDiv">
+  <div id="game">
+    <table id="board"></table>
+  </div>
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
